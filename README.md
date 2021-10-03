@@ -1,2 +1,2 @@
-# Oddam-w-dobre-r-ce.---RB
+# "Oddam-w-dobre-rece."-RB
 Celem projektu jest stworzenie miejsca, w którym każdy będzie mógł oddać niepotrzebne rzeczy zaufanym instytucjom.
