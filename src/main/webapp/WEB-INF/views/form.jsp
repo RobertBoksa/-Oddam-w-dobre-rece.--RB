@@ -172,7 +172,7 @@
                             <li>
                                 <span class="icon icon-bag"></span>
                                 <span class="summary--text" id="bagsCategory"
-                                >${donation.quantity.value}</span
+                                ></span
                                 >
                             </li>
 

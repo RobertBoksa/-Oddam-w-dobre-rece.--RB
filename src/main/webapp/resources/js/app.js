@@ -165,8 +165,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // TODO: get data from inputs and show them in summary
 
+let numBag = document.querySelector("#quantity").value;
+let textBag;
+    if(numBag === 1){
+      textBag = numBag + " worek "
+    } else {
+      textBag = numBag + " worki "
+    }
 
+   let check =  document.querySelectorAll("input[name='categories']:checked ~ span.description");
 
+      for (let i = 0; i < check.length; i++) {
+        textBag += check[i].innerText  + ", "
+      }
+
+      document.querySelector("#bagsCategory").innerText = textBag;
       document.querySelector("li#street").innerText = document.querySelector("#street").value;
       document.querySelector("li#city").innerText = document.querySelector("#city").value;
       document.querySelector("li#zipCode").innerText = document.querySelector("#zipCode").value;
