@@ -1,11 +1,15 @@
 package pl.coderslab.charity.model;
 
+import lombok.Data;
+import lombok.Getter;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
 @Entity
 @Table(name = "donation")
 public class Donation {

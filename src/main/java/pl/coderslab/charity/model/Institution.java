@@ -1,9 +1,12 @@
 package pl.coderslab.charity.model;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
 @Entity
 @Table(name = "institution")
 public class Institution {
@@ -16,6 +19,4 @@ public class Institution {
 
     private String description;
 
-    @OneToMany(mappedBy = "institution")
-    private List<Donation> donations = new ArrayList<>();
 }
