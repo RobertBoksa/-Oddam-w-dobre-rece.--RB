@@ -164,6 +164,22 @@ document.addEventListener("DOMContentLoaded", function() {
       this.$step.parentElement.hidden = this.currentStep >= 5;
 
       // TODO: get data from inputs and show them in summary
+
+
+
+      document.querySelector("li#street").innerText = document.querySelector("#street").value;
+      document.querySelector("li#city").innerText = document.querySelector("#city").value;
+      document.querySelector("li#zipCode").innerText = document.querySelector("#zipCode").value;
+      document.querySelector("li#date").innerText = document.querySelector("#pickUpDate").value;
+      document.querySelector("li#time").innerText = document.querySelector("#pickUpTime").value;
+      let comment = document.querySelector("#pickUpComment").value;
+      if(comment.trim().length === 0) {
+        document.querySelector("li#comment").innerText = "Brak uwag";
+      } else {
+        document.querySelector("li#comment").innerText = document.querySelector("#pickUpComment").value;
+      }
+
+
     }
 
   }
