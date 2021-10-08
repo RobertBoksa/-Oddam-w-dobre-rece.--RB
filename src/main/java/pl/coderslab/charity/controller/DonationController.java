@@ -29,6 +29,7 @@ public class DonationController {
     }
 
 
+
     @ModelAttribute("categories")
     public List<Category> showCategories(){
         return categoryService.findAllCategory();
@@ -50,5 +51,10 @@ public class DonationController {
     public String addDon(Donation donation){
         donationService.add(donation);
         return "redirect:/";
+    }
+
+    @GetMapping("/")
+    public String index(){
+        return "index";
     }
 }
