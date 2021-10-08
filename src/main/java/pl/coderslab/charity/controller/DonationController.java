@@ -40,6 +40,7 @@ public class DonationController {
         return institutionService.findAllInstitutions();
     }
 
+
     @GetMapping("/add")
     public String addDon(Model model){
         Donation donation = new Donation();
@@ -53,8 +54,4 @@ public class DonationController {
         return "redirect:/";
     }
 
-    @GetMapping("/")
-    public String index(){
-        return "index";
-    }
 }
