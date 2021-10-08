@@ -7,4 +7,8 @@ import pl.coderslab.charity.model.Donation;
 public interface DonationService {
 
     void add(Donation donation);
+
+    Integer sumAll();
+
+    Integer countDonation();
 }
