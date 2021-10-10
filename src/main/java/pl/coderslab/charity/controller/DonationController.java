@@ -51,7 +51,7 @@ public class DonationController {
     @PostMapping("/add")
     public String addDon(Donation donation){
         donationService.add(donation);
-        return "redirect:/";
+        return "confirmation";
     }
 
 }
